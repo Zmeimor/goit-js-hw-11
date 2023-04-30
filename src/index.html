@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>HW-GoIt-11</title>
+
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <!-- <link rel="stylesheet" href="simplelightbox/dist/simple-lightbox.min.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <include src="./partials/preloader.html"></include>
+
+    <div class="search-container">
+      <div class="logo">
+        <img src="./images/pixabay-logo-small.png" alt="Pixabay-logo" />
+      </div>
+      <form class="search-container__form" id="search-form">
+        <input type="text" name="searchQuery" autocomplete="off" />
+        <button
+          class="search-btn material-symbols-outlined"
+          type="submit"
+          name="submitBtn"
+        >
+          search
+        </button>
+      </form>
+    </div>
+
+    <div class="gallery">
+      <!-- Картки зображень -->
+    </div>
+
+    <div class="btn-container">
+      <button type="button" class="load-more material-symbols-outlined">
+        more_horiz
+      </button>
+      <button type="button" class="close-btn material-symbols-outlined">
+        close
+      </button>
+    </div>
   </body>
+
+  <script src="index.js" type="module"></script>
 </html>
